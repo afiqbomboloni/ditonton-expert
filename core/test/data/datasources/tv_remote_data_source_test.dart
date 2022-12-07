@@ -29,6 +29,31 @@ void main() {
     final tTvList = TvResponse.fromJson(
             json.decode(readJson('dummy_data/now_playing_tv.json')))
         .tvList;
+  test('should return list of tv when response is success (200)',
+        () async {
+      // arrange
+      when(mockHttpClient.get(Uri.parse('$BASE_URL/tv/on_the_air?$API_KEY')))
+          .thenAnswer((_) async =>
+              http.Response(readJson('dummy_data/now_playing_tv.json'), 200));
+      // act
+      final result = await dataSource.getNowPlayingTv();
+      // assert
+      expect(result, tTvList);
+    });
+
+    test(
+        'should throw a ServerException when the response code is 404 or other',
+        () async {
+      // arrange
+      when(mockHttpClient.get(Uri.parse('$BASE_URL/tv/on_the_air?$API_KEY')))
+          .thenAnswer((_) async => http.Response('Not Found', 404));
+      // act
+      final call = dataSource.getNowPlayingTv();
+      // assert
+      expect(() => call, throwsA(isA<ServerException>()));
+    });
+
+
 
   });
 
