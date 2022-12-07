@@ -66,7 +66,12 @@ class ContentDetail extends StatefulWidget {
   final TvDetail tvDetail;
   bool isAddedWatchlist;
 
-  ContentDetail({required this.tvDetail, required this.isAddedWatchlist});
+  ContentDetail({
+    Key? key,
+    required this.tvDetail,
+    required this.isAddedWatchlist,
+  }) : super(key: key);
+
 
   @override
   State<ContentDetail> createState() => _ContentDetailState();
@@ -75,8 +80,6 @@ class ContentDetail extends StatefulWidget {
 class _ContentDetailState extends State<ContentDetail> {
   @override
   Widget build(BuildContext context) {
-    const String addMessage = 'Add to watchlist';
-    const String removeMessage = 'Remove from watchlist';
     return ScrollableSheet(
       background: "$BASE_IMAGE_URL${widget.tvDetail.posterPath}",
         scrollableContents: [

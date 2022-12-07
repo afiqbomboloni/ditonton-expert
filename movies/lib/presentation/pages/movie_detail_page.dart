@@ -65,7 +65,11 @@ class ContentDetail extends StatefulWidget {
   final MovieDetail movieDetail;
   bool isAddedWatchlist;
 
-  ContentDetail({required this.movieDetail, required this.isAddedWatchlist});
+  ContentDetail({
+    Key? key,
+    required this.movieDetail,
+    required this.isAddedWatchlist,
+  }) : super(key: key);
 
   @override
   State<ContentDetail> createState() => _ContentDetailState();
