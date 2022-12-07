@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "899015527139",
+    "project_id": "ditonton-expert-fc532",
+    "storage_bucket": "ditonton-expert-fc532.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:899015527139:android:de2b14a3154bbe6c1953d6",
+        "android_client_info": {
+          "package_name": "com.dicoding.ditonton"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "899015527139-qbcu9qnsfme1j2udne16b67h0nlghvuv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDg5O5Ubrfs-vdec87YrEpgdNbzfIHcFTM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "899015527139-qbcu9qnsfme1j2udne16b67h0nlghvuv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
