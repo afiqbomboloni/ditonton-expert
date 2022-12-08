@@ -46,6 +46,7 @@ void main() async {
   WidgetsFlutterBinding.ensureInitialized();
   await HttpSSLPinning.init();
   await Firebase.initializeApp(
+    name: 'project-ditonton',
     options: DefaultFirebaseOptions.currentPlatform,
   );
   di.init();
