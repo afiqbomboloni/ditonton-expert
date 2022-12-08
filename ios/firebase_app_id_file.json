@@ -1,7 +1,7 @@
 {
   "file_generated_by": "FlutterFire CLI",
   "purpose": "FirebaseAppID & ProjectID for this Firebase app in this directory",
-  "GOOGLE_APP_ID": "1:899015527139:ios:bd8720132252a39d1953d6",
-  "FIREBASE_PROJECT_ID": "ditonton-expert-fc532",
-  "GCM_SENDER_ID": "899015527139"
+  "GOOGLE_APP_ID": "1:250061897750:ios:ed9a6040173fe5d850f537",
+  "FIREBASE_PROJECT_ID": "project-ditonton",
+  "GCM_SENDER_ID": "250061897750"
 }
