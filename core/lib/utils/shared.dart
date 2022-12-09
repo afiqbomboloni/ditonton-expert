@@ -18,7 +18,7 @@ class Shared {
       } else {
         try {
           certFileBytes =
-              (await rootBundle.load('assets/cert/ssl_pinning_certificate.pem'))
+              (await rootBundle.load('certificates/certificates.pem'))
                   .buffer
                   .asInt8List();
           log('Successfully access and load certificate.pem file!');
