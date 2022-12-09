@@ -1,9 +1,9 @@
 import 'package:movies/presentation/pages/home_movie_page.dart';
 import 'package:tv_series/presentation/pages/home_tv_page.dart';
 import 'package:about/about.dart';
-import 'package:movies/presentation/pages/watchlist_movies_page.dart';
 import 'package:core/presentation/widgets/tab_pager.dart';
 import 'package:flutter/material.dart';
+
 
 class DrawerPage extends StatelessWidget {
 
@@ -47,6 +47,7 @@ class DrawerPage extends StatelessWidget {
               leading: Icon(Icons.info_outline),
               title: Text('About'),
             ),
+    
           ],
         ),
     );
